@@ -6,6 +6,8 @@ import { Episode } from "@/app/types";
 import Loader from "@/app/components/Loader";
 import { showDetailsUrl } from "@/app/constants";
 
+/* Component that renders the Episode's details by reading the parameters (Season and Episode number) */
+
 export default function ShowDetailsPage() {
   const [episode, setEpisode] = useState<Episode | null>(null);
   const router = useRouter();
